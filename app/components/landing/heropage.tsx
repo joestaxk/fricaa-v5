@@ -7,6 +7,14 @@ import React from 'react'
 gsap.registerPlugin(ScrollTrigger)
 export const Hero = () => {
   useGSAP(() => {
+    gsap.fromTo(".gsap-scaleherostuff", {
+      scale: 0,
+    }, {
+      scale: .75,
+      duration: 1,
+      opacity: 1,
+      ease: "bounce.inOut",
+    })
     gsap.fromTo(".gsap-hero_container",
       {
         scale: 1,
@@ -21,7 +29,7 @@ export const Hero = () => {
         scrollTrigger: {
           trigger: ".gsap-hero_container",
           start: "top top",
-          end: "+=50%",
+          end: "+=10%",
           scrub: true,
           pin: true,
           anticipatePin: 1,
@@ -47,7 +55,7 @@ export const Hero = () => {
 
       <div className="absolute  px-5 inset-0 z-[10] pt-[50px] flex items-center justify-center">
         <div className="flex flex-col relative justify-center items-center space-y-2 xl:w-[600px] w-[400px]">
-          <div className="text-center w-full">
+          <div className="text-center w-full z-10">
             <div className="">Pop into online profiles</div>
             <div className="">& chat wizz new people</div>
           </div>
@@ -63,18 +71,18 @@ export const Hero = () => {
 
 
         {/* absolute stuffs */}
-        <div className="flex flex-col items-center absolute top-[100px] md:left-[10%] sm:left-[5%] left-[2%]">
+        <div className="gsap-scaleherostuff opacity-0 flex flex-col items-center sm:scale-100 scale-75 absolute top-[100px] md:left-[10%] sm:left-[5%] left-[2%]">
           <img src="/landing/online-girl-2.avif" className='xl:w-[100px] w-[80px]' alt="" />
           <div className="capitalize bg-black/20 px-4 py-2 backdrop-blur-lg rounded-lg translate-y-[-10px] text-sm">
             let&apos;s viiiibe
           </div>
         </div>
 
-        <div className="flex flex-col items-center absolute xl:top-[30%] top-[10%] right-[10%]">
+        <div className="gsap-scaleherostuff opacity-0 flex flex-col items-center absolute xl:top-[30%] top-[10%] right-[10%] sm:scale-100 scale-75">
           <img src="/landing/online-girl-1.avif" className='w-[70px]' alt="" />
         </div>
 
-        <div className="absolute xl:bottom-[150px] bottom-[50px] xl:right-[15%] right-[10%]">
+        <div className="gsap-scaleherostuff opacity-0 absolute z-0 xl:bottom-[150px] bottom-[50px] xl:right-[15%] right-[10%] sm:scale-100 scale-75">
           <img src="/landing/typingonline.webp" className='md:w-[120px] w-[80px]' alt="" />
           <div className="md:ml-20 ml-10 mt-2 leading-[1] flex items-center flex-col">
             <div className="capitalize w-[100px] flex justify-center gap-2 bg-black/10 px-4 py-2 backdrop-blur-lg rounded-lg translate-y-[-10px] text-sm">
@@ -86,8 +94,8 @@ export const Hero = () => {
           </div>
         </div>
 
-        <div className="absolute bottom-[150px] md:left-[25%] left-[5%]">
-          <div className="capitalize bg-black/20 px-4 py-2 backdrop-blur-lg rounded-lg translate-y-[-10px] text-sm">
+        <div className="gsap-scaleherostuff opacity-0 absolute sm:bottom-[150px] bottom-0 md:left-[25%] left-[5%]">
+          <div className="capitalize bg-black/20 px-4 py-2 backdrop-blur-lg rounded-lg md:translate-y-[-10px] text-sm">
             Fricaa me
           </div>
           <div className="flex items-center gap-2 text-sm">
@@ -97,8 +105,8 @@ export const Hero = () => {
         </div>
 
 
-        <div className="absolute xl:top-[30% md:top-[15%] sm:top-[20%] top-[25%] xl:right-[20%] sm:right-[30%] right-[10%] flex items-end flex-col">
-          <div className="capitalize bg-black/20 px-4 py-2 backdrop-blur-lg rounded-lg translate-y-[-5px] text-sm">
+        <div className="gsap-scaleherostuff opacity-0 absolute xl:top-[30% md:top-[15%] sm:top-[10%] top-14  xl:right-[20%] right-[40%] flex items-end flex-col">
+          <div className="capitalize bg-black/20 px-4 py-2 backdrop-blur-lg rounded-lg md:translate-y-[-5px] text-sm">
             Let&apos;s chaaaat ! 💬
           </div>
           <div className="flex items-center gap-2 text-sm">

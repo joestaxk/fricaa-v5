@@ -37,11 +37,11 @@ export const Section3 = () => {
 
         // Get total width of the carousel
         const carouselWidth = carousel.scrollWidth;
-        
+
 
         tl.to(carousel, {
             x: -carouselWidth / 3, // Move 1/3 of the total width
-            duration: 10, // Adjust speed here
+            duration: 20, // Adjust speed here
             ease: "linear",
             onComplete: () => {
                 // Reset position instantly
@@ -78,25 +78,7 @@ export const Section3 = () => {
     }, []);
 
     return (
-        <div className="relative h-screen overflow-hidden flex flex-col justify-center items-center lg:pt-[5rem] py-[5rem]">
-            {/* <div
-                ref={containerRef}
-                className="relative w-full overflow-hidden rotate-[-7deg] gsap-section4"
-            >
-                <div
-                    className="absolute inset-0 w-full h-full"
-                    style={{
-                        background: 'linear-gradient(90deg, rgb(0,0,0) 0%, rgba(0,0,0,0) 15%, rgba(0,0,0,0) 85%, rgb(0,0,0) 100%)',
-                        zIndex: 10
-                    }}
-                />
-                <div
-                    ref={scrollRef}
-                    className="flex items-center gap-5 transition-transform"
-                    style={{ willChange: 'transform' }}
-                >
-                </div>
-            </div> */}
+        <div className="relative h-screen overflow-hidden flex flex-col justify-center items-center lg:pt-[5rem] py-[5rem]">9
             <div
                 className="absolute inset-0 w-full h-full z-0"
                 style={{
@@ -113,20 +95,8 @@ export const Section3 = () => {
                 />
             </div>
 
-            <div className="absolute h-full w-full z-[-1]">
-                <div
-                    className="absolute inset-0 w-full h-full"
-                    style={{
-                        background: 'linear-gradient(90deg, rgb(0,0,0,.3) 0%, rgba(0,0,0,.3) 15%, rgba(0,0,0) 85%, rgb(0,0,0) 100%)',
-                        zIndex: 10
-                    }}
-                />
-                <video playsInline muted autoPlay loop className='w-full h-full'>
-                    <source src='i-phone.webm' />
-                </video>
-            </div>
 
-            <div className="mt-[5rem] flex items-center flex-col space-y-2 px-5 z-10">
+            <div className="h-screen mt-[5rem] flex items-center flex-col space-y-2 px-5 z-10">
                 <div className="roboto_slab lg:text-[5rem] sm:text-[3rem] text-[2rem] font-semibold text-center leading-[1]">
                     <div className="gsap-section4 opacity-0">OUR</div>
                     <div className="gsap-section4 opacity-0">COMMUNITY</div>
@@ -135,15 +105,17 @@ export const Section3 = () => {
                 <div className="md:w-[700px] sm:w-[500px] w-full text-center gsap-section4 opacity-0 text-[#ebebeb]">
                     Fricaa is where positivity flourishes. Our community is built on respect, understanding,
                     and the shared desire to create a space where everyone feels safe and valued. Inappropriate
-                    behavior has no place here; we’re all about positive vibes and meaningful connections.
+                    behavior has no place here; we&apos;re all about positive vibes and meaningful connections.
                 </div>
+
+                <button className='gsap-section4 opacity-0 bg-[#E4317D] py-2 px-2 rounded-[10px]'>Ambassadors at Wizz</button>
             </div>
 
             <div
                 ref={containerRef}
-                className="relative w-full  z-10 h-screen overflow-hidden flex items-center justify-center"
+                className="relative w-full h-[500px] z-10  rotate-[5deg] overflow-hidden flex items-center justify-center"
             >
-                 <div
+                <div
                     className="absolute inset-0 w-full h-full"
                     style={{
                         background: 'linear-gradient(90deg, rgb(0,0,0) 0%, rgba(0,0,0,0) 15%, rgba(0,0,0,0) 85%, rgb(0,0,0) 100%)',
@@ -157,11 +129,11 @@ export const Section3 = () => {
                     {images.map((src, index) => (
                         <div
                             key={index}
-                            className="min-w-[200px] h-[250px] rounded-md overflow-hidden bg-white/10 backdrop-blur-xl"
+                            className="min-w-[150px] rounded-[30px]  h-[250px]  overflow-hidden bg-white/10 backdrop-blur-xl"
                         >
                             <img
                                 src={src}
-                                className="object-cover w-full h-full"
+                                className="object-cover w-full h-full rounded-[30px]"
                                 alt={`Carousel image ${index}`}
                             />
                         </div>

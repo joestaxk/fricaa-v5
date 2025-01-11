@@ -10,9 +10,7 @@ body {
 
 
 .animate-spin {
-  animation: animate-spin infinite;
-  animation-duration: 60s;
-  animation-delay: .1ms;
+animation: animate-spin 50s linear .1ms infinite
 }
 
 @keyframes animate-spin {

@@ -5,7 +5,7 @@ export const FakeChats = ({ imgSrc, user, message, i }: {imgSrc: string, user: s
         <div
             className={`
                 flex items-end flex-col gap-2 absolute z-10 
-                ${(i + 1) % 2 == 0 ? "sm:right-[5vh] right-0" : "sm:left-[-5vh] left-[-20vh]"}
+                ${(i + 1) % 2 == 0 ? "sm:right-[5vh] right-2" : "sm:left-[-5vh] left-[-28vh]"}
                 top-[10rem]
             `}
             style={{

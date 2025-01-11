@@ -14,7 +14,7 @@ export const Section2 = () => {
             y: 0,
             scrollTrigger: {
                 start: 'center',
-                end: "bottom",
+                end: "bottom 80%",
                 scrub: true
             }
         })
@@ -27,7 +27,7 @@ export const Section2 = () => {
                     <div className="">Your world</div>
                     <div className="">Meet</div>
                     <div className="">New</div>
-                    <div className="">Friend</div>
+                    <div className="">Friends</div>
                     <div className="">on fricaa</div>
                 </div>
 

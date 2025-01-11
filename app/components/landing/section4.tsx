@@ -19,7 +19,8 @@ export const Section4 = () => {
                 trigger: ".gsap_leftslide",
                 start: 'top 50%',
                 end: "bottom 50%",
-                scrub: true
+                scrub: true,
+                toggleActions: "play none none none"
             }
         })
 
@@ -34,7 +35,8 @@ export const Section4 = () => {
                 trigger: ".gsap_text_stagger",
                 start: 'top 50%',
                 end: "bottom 50%",
-                scrub: true
+                scrub: true,
+                toggleActions: "play none none none"
             }
         })
     })
