@@ -37,7 +37,7 @@ export const Section3 = () => {
 
         // Get total width of the carousel
         const carouselWidth = carousel.scrollWidth;
-        const containerWidth = container.offsetWidth;
+        
 
         tl.to(carousel, {
             x: -carouselWidth / 3, // Move 1/3 of the total width
