@@ -48,7 +48,7 @@ export const Section4 = () => {
                     </div>
 
                     <div className="sm:w-[600px] w-full">
-                        Say goodbye to outdated matchmaking apps. Feelings allow you to express yourself more than just a like or dislike! Whether you're searching for dating, seeking new friendships, or just want someone to chat with.
+                        Say goodbye to outdated matchmaking apps. Feelings allow you to express yourself more than just a like or dislike! Whether you&apos;re searching for dating, seeking new friendships, or just want someone to chat with.
                     </div>
                 </div>
 
