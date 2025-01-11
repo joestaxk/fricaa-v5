@@ -69,7 +69,7 @@ export const Section3 = () => {
                 scrollTrigger: {
                     trigger: ".gsap-section4",
                     start: "top 80%",
-                    end: "top 20%",
+                    end: "bottom 20%",
                     scrub: 1,
                     toggleActions: "play none none reverse"
                 }
@@ -78,7 +78,7 @@ export const Section3 = () => {
     }, []);
 
     return (
-        <div className="relative h-screen overflow-hidden flex flex-col justify-center items-center lg:pt-[5rem] py-[5rem]">9
+        <div className="relative min-h-screen overflow-hidden flex flex-col justify-center items-center lg:pt-[5rem] py-[5rem]">9
             <div
                 className="absolute inset-0 w-full h-full z-0"
                 style={{
@@ -87,16 +87,16 @@ export const Section3 = () => {
                 }}
             />
             <div className="absolute animate-spin will-change-transform origin-center 
-        w-[3000px] h-[3000px] z-0">
+        min-w-[3000px] h-[3000px] z-0">
                 <img
                     src="/bg-hero.avif"
                     alt="hero"
-                    className='block w-full h-full object-cover'
+                    className='block min-w-full min-h-full object-cover'
                 />
             </div>
 
 
-            <div className="h-screen mt-[5rem] flex items-center flex-col space-y-2 px-5 z-10">
+            <div className=" mt-[5rem]  flex items-center flex-col space-y-2 px-5 z-10">
                 <div className="roboto_slab lg:text-[5rem] sm:text-[3rem] text-[2rem] font-semibold text-center leading-[1]">
                     <div className="gsap-section4 opacity-0">OUR</div>
                     <div className="gsap-section4 opacity-0">COMMUNITY</div>
@@ -113,7 +113,7 @@ export const Section3 = () => {
 
             <div
                 ref={containerRef}
-                className="relative w-full h-[500px] z-10  rotate-[5deg] overflow-hidden flex items-center justify-center"
+                className="relative w-full min-h-[400px] mt-5 z-10  rotate-[5deg] overflow-hidden flex items-center justify-center"
             >
                 <div
                     className="absolute inset-0 w-full h-full"

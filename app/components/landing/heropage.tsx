@@ -29,7 +29,7 @@ export const Hero = () => {
         scrollTrigger: {
           trigger: ".gsap-hero_container",
           start: "top top",
-          end: "+=10%",
+          end: "+=50%",
           scrub: true,
           pin: true,
           anticipatePin: 1,
@@ -94,7 +94,7 @@ export const Hero = () => {
           </div>
         </div>
 
-        <div className="gsap-scaleherostuff opacity-0 absolute sm:bottom-[150px] bottom-0 md:left-[25%] left-[5%]">
+        <div className="gsap-scaleherostuff opacity-0 absolute sm:bottom-[150px] bottom-[10%] md:left-[25%] left-[5%]">
           <div className="capitalize bg-black/20 px-4 py-2 backdrop-blur-lg rounded-lg md:translate-y-[-10px] text-sm">
             Fricaa me
           </div>

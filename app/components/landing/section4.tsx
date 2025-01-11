@@ -56,8 +56,8 @@ export const Section4 = () => {
 
 
                 <div className="relative h-[650px] w-[350px]">
-                    <img src="/frame.svg" className='absolute h-[650px] z-[1] left-0 w-[350px]' alt="" />
-                    <img src="/landing/phone_section4.webp" className='absolute h-[600px] top-5 z-[1] left-5 w-[310px]' alt="" />
+                    <img src="/frame.svg" className='absolute sm:h-[650px] h-[600px] z-[1] left-0 sm:w-[350px] w-[310px]' alt="" />
+                    <img src="/landing/phone_section4.webp" className='absolute sm:h-[600px] h-[550px] top-5 z-[1] left-5 sm:w-[310px] w-[270px]' alt="" />
                     <img src="/landing/kitty.webp" className='w-[150px] z-[8] absolute bottom-0 right-0' alt="" />
                 </div>
 
