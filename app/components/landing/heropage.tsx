@@ -66,7 +66,7 @@ export const Hero = () => {
         <div className="flex flex-col items-center absolute top-[100px] md:left-[10%] sm:left-[5%] left-[2%]">
           <img src="/landing/online-girl-2.avif" className='xl:w-[100px] w-[80px]' alt="" />
           <div className="capitalize bg-black/20 px-4 py-2 backdrop-blur-lg rounded-lg translate-y-[-10px] text-sm">
-            let's viiiibe
+            let&apos;s viiiibe
           </div>
         </div>
 
@@ -99,7 +99,7 @@ export const Hero = () => {
 
         <div className="absolute xl:top-[30% md:top-[15%] sm:top-[20%] top-[25%] xl:right-[20%] sm:right-[30%] right-[10%] flex items-end flex-col">
           <div className="capitalize bg-black/20 px-4 py-2 backdrop-blur-lg rounded-lg translate-y-[-5px] text-sm">
-            Let's chaaaat ! 💬
+            Let&apos;s chaaaat ! 💬
           </div>
           <div className="flex items-center gap-2 text-sm">
             <p>Leslie</p>
