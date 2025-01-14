@@ -31,13 +31,14 @@ export default function Home() {
     };
   }, []);
   return (
-    <div className="overflow-hidden">
-      <Header />
+    <div className="overflow-hidden flex items-center justify-center">
+      {/* <Header />
       <Hero />
       <Section2 />
       <Section4 />
       <Section3 />
-      <Footer />
+      <Footer /> */}
+      <h1 className="text-3xl font-bold">HEY, MAN PAY ME OFF FOR THIS JOB.</h1>
     </div>
   );
 }
