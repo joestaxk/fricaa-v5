@@ -1,12 +1,12 @@
 "use client";
 import { useEffect } from "react";
 import Lenis from "@studio-freight/lenis";
-import { Header } from "./components/common/header";
-import { Hero } from "./components/landing/heropage";
-import { Section2 } from "./components/landing/section2";
-import { Section3 } from "./components/landing/section3";
-import { Section4 } from "./components/landing/section4";
-import { Footer } from "./components/common/footer";
+// import { Header } from "./components/common/header";
+// import { Hero } from "./components/landing/heropage";
+// import { Section2 } from "./components/landing/section2";
+// import { Section3 } from "./components/landing/section3";
+// import { Section4 } from "./components/landing/section4";
+// import { Footer } from "./components/common/footer";
 
 export default function Home() {
   useEffect(() => {
