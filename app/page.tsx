@@ -31,7 +31,7 @@ export default function Home() {
     };
   }, []);
   return (
-    <div className="overflow-hidden flex items-center justify-center">
+    <div className="overflow-hidden">
       <Header />
       <Hero />
       <Section2 />
