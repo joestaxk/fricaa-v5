@@ -1,12 +1,12 @@
 "use client";
 import { useEffect } from "react";
 import Lenis from "@studio-freight/lenis";
-// import { Header } from "./components/common/header";
-// import { Hero } from "./components/landing/heropage";
-// import { Section2 } from "./components/landing/section2";
-// import { Section3 } from "./components/landing/section3";
-// import { Section4 } from "./components/landing/section4";
-// import { Footer } from "./components/common/footer";
+import { Header } from "./components/common/header";
+import { Hero } from "./components/landing/heropage";
+import { Section2 } from "./components/landing/section2";
+import { Section3 } from "./components/landing/section3";
+import { Section4 } from "./components/landing/section4";
+import { Footer } from "./components/common/footer";
 
 export default function Home() {
   useEffect(() => {
@@ -32,13 +32,12 @@ export default function Home() {
   }, []);
   return (
     <div className="overflow-hidden flex items-center justify-center">
-      {/* <Header />
+      <Header />
       <Hero />
       <Section2 />
       <Section4 />
       <Section3 />
-      <Footer /> */}
-      <h1 className="text-3xl font-bold">HEY, MAN PAY ME OFF FOR THIS JOB.</h1>
+      <Footer /> 
     </div>
   );
 }
