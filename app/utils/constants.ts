@@ -1,7 +1,15 @@
 export const MENUBAR_ITEM = [
     {
         to: "#",
-        value: "Our Mission",
+        value: "About",
+        sub: [
+            {
+                value: "About us"
+            },
+            {
+                value: "Our mission"
+            }
+        ]
     },
     {
         to: "#",
@@ -17,7 +25,15 @@ export const MENUBAR_ITEM = [
     },
     {
         to: "#",
-        value: "media",
+        value: "⁠safety",
+    },
+    {
+        to: "#",
+        value: "⁠news",
+    },
+    {
+        to: "#",
+        value: "⁠contact us",
     }
 ] 
 
@@ -34,6 +50,18 @@ export const CHAT_PROPS = [
     {
         name: "ryan",
         message: "kilode",
+    },
+    {
+        name: "ben",
+        message: "check this out ",
+    },
+    {
+        name: "emile",
+        message: "will you be happy again ",
+    },
+    {
+        name: "david",
+        message: "i'm sorry my love",
     },
     {
         name: "ben",

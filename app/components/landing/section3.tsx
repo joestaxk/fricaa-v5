@@ -97,23 +97,23 @@ export const Section3 = () => {
 
 
             <div className=" mt-[5rem]  flex items-center flex-col space-y-2 px-5 z-10">
-                <div className="roboto_slab lg:text-[5rem] sm:text-[3rem] text-[2rem] font-semibold text-center leading-[1]">
+                <div className="anton lg:text-[5rem] sm:text-[3rem] text-[2rem] font-semibold text-center leading-[1]">
                     <div className="gsap-section4 opacity-0">OUR</div>
                     <div className="gsap-section4 opacity-0">COMMUNITY</div>
                 </div>
 
-                <div className="md:w-[700px] sm:w-[500px] w-full text-center gsap-section4 opacity-0 text-[#ebebeb]">
+                <div className="fira md:w-[700px] sm:w-[500px] w-full text-center gsap-section4 opacity-0 text-[#ebebeb]">
                     Fricaa is where positivity flourishes. Our community is built on respect, understanding,
                     and the shared desire to create a space where everyone feels safe and valued. Inappropriate
                     behavior has no place here; we&apos;re all about positive vibes and meaningful connections.
                 </div>
 
-                <button className='gsap-section4 opacity-0 bg-[#E4317D] py-2 px-2 rounded-[10px]'>Ambassadors at Wizz</button>
+                <button className='gsap-section4 opacity-0 bg-[#E4317D] py-2 px-2 rounded-[10px] fira'>Ambassadors at Wizz</button>
             </div>
 
             <div
                 ref={containerRef}
-                className="relative w-full min-h-[400px] mt-5 z-10  rotate-[5deg] overflow-hidden flex items-center justify-center"
+                className="relative w-full min-h-[400px] mt-5 z-10 overflow-hidden flex items-center justify-center"
             >
                 <div
                     className="absolute inset-0 w-full h-full"
@@ -124,12 +124,12 @@ export const Section3 = () => {
                 />
                 <div
                     ref={carouselRef}
-                    className="absolute flex gap-4 will-change-transform"
+                    className="absolute bottom-0 flex gap-4 will-change-transform"
                 >
                     {images.map((src, index) => (
                         <div
                             key={index}
-                            className="min-w-[150px] rounded-[30px]  h-[250px]  overflow-hidden bg-white/10 backdrop-blur-xl"
+                            className="min-w-[150px] rounded-[30px] h-[250px]  overflow-hidden bg-white/10 backdrop-blur-xl"
                         >
                             <img
                                 src={src}

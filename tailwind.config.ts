@@ -11,10 +11,17 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        pink: "#FF029C",
+        pinkHover: "#FF4EBA",
+        darkHero: "#090408",
       },
       screens: {
-        'xs': "320px"
-      }
+        xs: "320px",
+        mLg: "918px",
+        xxl: "1600px",
+        xzl: "1500px",
+        xsl: "1400px"
+      },
     },
   },
   plugins: [],
