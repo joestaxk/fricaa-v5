@@ -26,7 +26,7 @@ const FanRewards2 = () => {
   return (
     <div>
       <div className="flex justify-center">
-        <div className="relative max-w-[2000px] h-[1000px] sm:h-[1350px] lg:h-[900px] w-full flex justify-center overflow-hidden">
+        <div className="relative max-w-[2000px] h-[1150px] sm:h-[1200px] lg:h-[900px] w-full flex justify-center overflow-hidden">
           <div
             className="play absolute top-[10%] left-[-5%] z-[1] inset-0 opacity-40"
             style={{
@@ -38,8 +38,8 @@ const FanRewards2 = () => {
             }}
           />
 
-          <div className="px-5 absolute inset-0 z-20 h-full flex justify-center w-full pt-[2rem]">
-            <div className="xzl:w-[1500px] xl:w-[1200px] lg:w-[1000px] w-full h-fit lg:flex lg:pt-[6rem] lg:space-y-0 space-y-20 justify-center gap-10">
+          <div className="px-5 absolute inset-0 z-20 h-full flex justify-center w-full sm:pt-[2rem]">
+            <div className="xzl:w-[1500px] xl:w-[1200px] lg:w-[1000px] w-full h-fit flex lg:flex-row flex-col-reverse lg:pt-[6rem] lg:space-y-0 space-y-20 justify-center gap-10">
               <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}

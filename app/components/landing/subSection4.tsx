@@ -25,11 +25,11 @@ const fira = localFont({
 
 const FanRewards = () => {
   return (
-    <div className="relative">
-      <div className="w-[500px] h-[500px] bg-pink/60 rounded-full top-[50%] right-[-250px] absolute blur-[15rem] z-0"></div>
+    <div className="relative pt-[5rem] lg:pt-[2rem]">
+      <div className=" bg-pink/60 rounded-full top-[50%] right-[-250px] absolute blur-[15rem] z-0"></div>
 
-      <div className="flex justify-center">
-        <div className="relative max-w-[2000px] h-[1000px] sm:h-[1350px] lg:h-[900px] w-full flex justify-center overflow-hidden">
+      <div className="flex justify-center  max-w-[2000px] h-[1100px] sm:h-[1200px] lg:h-[900px]">
+        <div className="relative w-full flex justify-center overflow-hidden">
           <div
             className="play absolute top-[10%] left-[-5%] z-[1] inset-0 opacity-40"
             style={{

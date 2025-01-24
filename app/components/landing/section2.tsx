@@ -29,9 +29,9 @@ export const Section2 = () => {
                 </div>
 
                 <div className="relative overflow-hidden gsap-mockup select-none h-full">
-                    <img src="/frame.svg" alt=""  className='w-[320px] h-[600px] z-0'/>
+                    <img src="/frame.svg" alt=""  className='xsm:w-[320px] w-[300px] h-[600px] z-0'/>
                     {/* <div className="w-[320px] h-[600px] absolute rounded-[9%] top-6 left-5  blur-md saturate-200 inset-0 z-[-1] bg-gradient-to-l group-hover:bg-gradient-to-r from-[#EF3FE8] via-[#F94A3F] to-[#E4317D] transition-all duration-200"></div> */}
-                    <video className='w-[500px] h-[550px] absolute z-10 top-5 rounded-[80px] select-none' playsInline loop muted autoPlay>
+                    <video className='w-[490px] h-[555px] absolute z-10 top-5 rounded-[60px] select-none' playsInline loop muted autoPlay>
                         <source src='https://framerusercontent.com/assets/UDIqZrNAE2Co85ZHBf6G2BdAkVw.mp4' />
                     </video>
                     <div className="asboulute inset-0 bg-black z-10"></div>

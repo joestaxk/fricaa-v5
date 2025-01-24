@@ -9,13 +9,18 @@ import localFont from 'next/font/local'
 const fira = localFont({
   src: [
     {
+        path: '../../../public/font/fira/FiraSans-Light.ttf',
+        weight: '400',
+        style: 'normal',
+      },
+    {
       path: '../../../public/font/fira/FiraSans-Regular.ttf',
       weight: '400',
       style: 'normal',
     },
     {
       path: '../../../public/font/fira/FiraSans-Medium.ttf',
-      weight: '400',
+      weight: '500',
       style: 'normal',
     }
   ],
@@ -85,17 +90,16 @@ export const Section3 = () => {
                 stagger: .5,
                 scrollTrigger: {
                     trigger: ".gsap-section4",
-                    start: "top 80%",
-                    end: "bottom 20%",
+                    start: "top 60%",
+                    end: "center 30%",
                     scrub: 1,
-                    toggleActions: "play none none reverse"
                 }
             }
         );
     }, []);
 
     return (
-        <div className="relative min-h-screen overflow-hidden flex flex-col justify-center items-center lg:pt-[5rem] py-[5rem]">9
+        <div className="relative min-h-scren overflow-hidden flex flex-col justify-center items-center lg:pt-[5rem] py-[5rem]">9
             <div
                 className="absolute inset-0 w-full h-full z-0"
                 style={{
@@ -113,13 +117,13 @@ export const Section3 = () => {
             </div>
 
 
-            <div className=" mt-[5rem]  flex items-center flex-col space-y-2 px-5 z-10">
-                <div className="anton lg:text-[5rem] sm:text-[3rem] text-[2rem] font-semibold text-center leading-[1]">
+            <div className="flex items-center flex-col space-y-2 px-5 z-10">
+                <div className="anton lg:text-[5rem] sm:text-[3rem] text-[2.5rem] font-semibold text-center leading-[1]">
                     <div className="gsap-section4 opacity-0">OUR</div>
                     <div className="gsap-section4 opacity-0">COMMUNITY</div>
                 </div>
 
-                <div className={`${fira.className} md:w-[700px] sm:w-[500px] w-full text-center gsap-section4 opacity-0 text-[#ebebeb]`}>
+                <div className={`${fira.className} md:w-[700px] sm:w-[500px] w-full font-[300] text-center gsap-section4 opacity-0 text-[#ebebeb]`}>
                     Fricaa is where positivity flourishes. Our community is built on respect, understanding,
                     and the shared desire to create a space where everyone feels safe and valued. Inappropriate
                     behavior has no place here; we&apos;re all about positive vibes and meaningful connections.
@@ -141,16 +145,16 @@ export const Section3 = () => {
                 />
                 <div
                     ref={carouselRef}
-                    className="absolute bottom-0 flex gap-4 will-change-transform"
+                    className="absolute bottom-0 flex gap-2 will-change-transform"
                 >
                     {images.map((src, index) => (
                         <div
                             key={index}
-                            className="min-w-[150px] rounded-[30px] h-[250px]  overflow-hidden bg-white/10 backdrop-blur-xl"
+                            className="min-w-[120px] rounded-[10px] h-[200px]  overflow-hidden bg-white/10 backdrop-blur-xl"
                         >
                             <img
                                 src={src}
-                                className="object-cover w-full h-full rounded-[30px]"
+                                className="object-cover w-full h-full rounded-[10px]"
                                 alt={`Carousel image ${index}`}
                             />
                         </div>
