@@ -26,6 +26,7 @@ export const Hero = () => {
         opacity: 0,
         duration: 1,
         ease: "power1.inOut",
+        stagger: .5,
         scrollTrigger: {
           trigger: ".gsap-hero_container",
           start: "top top",
@@ -57,7 +58,7 @@ export const Hero = () => {
         <div className="flex flex-col relative justify-center items-center space-y-2 xl:w-[600px] w-[400px]">
           <div className="text-center w-full z-10">
             <div className="">Pop into online profiles</div>
-            <div className="">& chat wizz new people</div>
+            <div className="">& chat Fricaa new people</div>
           </div>
 
           <div className="w-full flex justify-center xl:space-y-[6.5rem] space-y-[5rem]">
@@ -67,23 +68,17 @@ export const Hero = () => {
             </div>
             <h1 className='xl:text-[9rem] md:text-[7rem] text-[5.4rem] font-bold z-[2]'>NOW</h1>
           </div>
+      <img src="/yando/sample_1.webp" className="md:w-[140px] md:h-[140px] w-[40px] h-[40px] gsap-scaleherostuff opacity-0 absolute top-[-150px]" alt="samp1" />
+      <img src="/yando/sample_2.webp" className="md:w-[90px] md:h-[90px] w-[69px] h-[69px] gsap-scaleherostuff opacity-0 absolute top-0 left-[-40px]" alt="samp2" />
+      <img src="/yando/sample_3.webp" className="md:w-[120px] md:h-[120px] w-[40px] h-[40px] gsap-scaleherostuff opacity-0 absolute top-[40px] right-[-15px]" alt="samp3" />
+      <img src="/yando/sample_4.webp" className="md:w-[100px] md:h-[100px] w-[80px] h-[80px] gsap-scaleherostuff opacity-0 absolute bottom-[-140px] left-0" alt="samp4" />
+      <img src="/yando/sample_5.webp" className="md:w-[95px] md:h-[95px] w-[37px] h-[37px] gsap-scaleherostuff opacity-0 absolute bottom-[50px] left-0" alt="samp5" />
+      <img src="/yando/sample_6.webp" className="md:w-[100px] md:h-[100px] w-[37px] h-[37px] gsap-scaleherostuff opacity-0 absolute bottom-0" alt="samp6" />
         </div>
-
-
-
-        <div className="gsap-scaleherostuff opacity-0 absolute z-0 xl:bottom-[150px] bottom-[50px] xl:right-[15%] right-[10%] sm:scale-100 scale-75">
-          <img src="/landing/typingonline.webp" className='md:w-[120px] w-[80px]' alt="" />
-          <div className="md:ml-20 ml-10 mt-2 leading-[1] flex items-center flex-col">
-            <div className="capitalize w-[100px] flex justify-center gap-2 bg-black/10 px-4 py-2 backdrop-blur-lg rounded-lg translate-y-[-10px] text-sm">
-              <div className="w-[10px] h-[10px] animate-pulse rounded-full bg-white"></div>
-              <div className="w-[10px] h-[10px] animate-pulse rounded-full bg-white"></div>
-              <div className="w-[10px] h-[10px] animate-pulse rounded-full bg-white"></div>
-            </div>
-            <div className="text-sm">Damien typing...</div>
-          </div>
-        </div>
-
       </div>
+
+
+
     </div>
   )
 }

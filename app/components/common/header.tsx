@@ -23,6 +23,7 @@ export const Header = () => {
         <div className={`flex justify-center w-full z-[20] sm:bg-black bg-transparent ${scrolling ? "fixed top-0" : ''}`}>
             <div className=' w-[1400px] max-w-full m-auto px-5 h-14 md:rounded-full text-white flex items-center justify-between'>
                 <Image src="/fricaa.svg" alt="fricaa logo" className='md:w-[100px] sm:w-[90px] w-[100px] h-auto object-cover' width={100} height={100} />
+                <div className="absolute inset-0 bg-black/40 z-0 md:hidden blur-xl"></div>
 
                 <ul className="sm:flex hidden items-center gap-5 font-semibold">
                     {MENUBAR_ITEM.map(({ to, value, sub }, i) => (
