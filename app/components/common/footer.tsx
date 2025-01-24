@@ -17,8 +17,13 @@ export const Footer = () => {
                     </ul>
                 </div>
 
-                <div className="">
+                <div className="flex flex-col items-center flex-1 space-y-2">
                     <Image src="/fricaa.svg" alt="fricaa logo" className='md:w-[200px] sm:w-[90px] w-[100px] h-auto object-cover' width={100} height={100} />
+
+                    <div className="flex mt-2 justify-center gap-2">
+                        <Image src="/landing/play_store.svg" alt="play store" className='' width={120} height={120}/>
+                        <Image src="/landing/app_store.svg" alt="app store" className='' width={120} height={120}/>
+                    </div>
                 </div>
 
                 <div className="">
@@ -33,8 +38,8 @@ export const Footer = () => {
 
                                 {!!sub && <ul className="w-[190px] bg-black leading-[1] z-10 mt-[.5rem] group-hover:block hidden group-hover:pointer-events-auto pointer-events-none  rounded-lg p-2 space-y-3">
                                     {
-                                        sub.map((s) => (
-                                            <li className='hover:text-[#ff3d9e] cursor-pointer'>
+                                        sub.map((s,j) => (
+                                            <li key={j} className='hover:text-[#ff3d9e] cursor-pointer'>
                                                 <a href='' className='text-[15px] capitalize font-[500] duration-150 w-full'>{s.value}</a>
                                             </li>
                                         ))

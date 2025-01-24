@@ -3,6 +3,23 @@ import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import React, { useRef, useEffect, useState } from 'react';
+import localFont from 'next/font/local'
+
+ 
+const fira = localFont({
+  src: [
+    {
+      path: '../../../public/font/fira/FiraSans-Regular.ttf',
+      weight: '400',
+      style: 'normal',
+    },
+    {
+      path: '../../../public/font/fira/FiraSans-Medium.ttf',
+      weight: '400',
+      style: 'normal',
+    }
+  ],
+})
 
 export const Section3 = () => {
     const carouselRef = useRef<HTMLDivElement>(null);
@@ -102,13 +119,13 @@ export const Section3 = () => {
                     <div className="gsap-section4 opacity-0">COMMUNITY</div>
                 </div>
 
-                <div className="fira md:w-[700px] sm:w-[500px] w-full text-center gsap-section4 opacity-0 text-[#ebebeb]">
+                <div className={`${fira.className} md:w-[700px] sm:w-[500px] w-full text-center gsap-section4 opacity-0 text-[#ebebeb]`}>
                     Fricaa is where positivity flourishes. Our community is built on respect, understanding,
                     and the shared desire to create a space where everyone feels safe and valued. Inappropriate
                     behavior has no place here; we&apos;re all about positive vibes and meaningful connections.
                 </div>
 
-                <button className='gsap-section4 opacity-0 bg-[#E4317D] py-2 px-2 rounded-[10px] fira'>Ambassadors at Wizz</button>
+                <button className='gsap-section4 opacity-0 bg-[#E4317D] py-2 px-2 rounded-[10px] fira'>Ambassadors at Fricaa</button>
             </div>
 
             <div

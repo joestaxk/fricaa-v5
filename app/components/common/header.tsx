@@ -21,8 +21,8 @@ export const Header = () => {
                             <div className="absolute top-[50px] left-[-10px] z-10 group-hover:pointer-events-auto pointer-events-none">
                                 {!!sub && <ul className="w-[190px] bg-black leading-[1] z-10 mt-3 group-hover:opacity-100 opacity-0 group-hover:pointer-events-auto pointer-events-none  rounded-lg p-2 space-y-3">
                                     {
-                                        sub.map((s) => (
-                                            <li className='hover:text-[#ff3d9e] cursor-pointer'>
+                                        sub.map((s, i) => (
+                                            <li key={i} className='hover:text-[#ff3d9e] cursor-pointer'>
                                                 <a href='' className='text-[15px] capitalize font-[500] duration-150 w-full'>{s.value}</a>
                                             </li>
                                         ))

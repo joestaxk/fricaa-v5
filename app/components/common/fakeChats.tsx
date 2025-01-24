@@ -1,3 +1,4 @@
+import Image from "next/image"
 import { AnimatedTypewriterText } from "./typewriter"
 
 export const FakeChats = ({ imgSrc, user, message, i }: {imgSrc: string, user: string, message: string, i: number}) => {
@@ -22,7 +23,7 @@ export const FakeChats = ({ imgSrc, user, message, i }: {imgSrc: string, user: s
             </div>
             <div className="flex text-sm items-center gap-2">
                 <span>{user}</span>
-                <img
+                <Image
                     src={imgSrc}
                     width={30}
                     height={30}

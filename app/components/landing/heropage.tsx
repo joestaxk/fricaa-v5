@@ -70,17 +70,6 @@ export const Hero = () => {
         </div>
 
 
-        {/* absolute stuffs */}
-        <div className="gsap-scaleherostuff opacity-0 flex flex-col items-center sm:scale-100 scale-75 absolute top-[100px] md:left-[10%] sm:left-[5%] left-[2%]">
-          <img src="/landing/online-girl-2.avif" className='xl:w-[100px] w-[80px]' alt="" />
-          <div className="capitalize bg-black/20 px-4 py-2 backdrop-blur-lg rounded-lg translate-y-[-10px] text-sm">
-            let&apos;s viiiibe
-          </div>
-        </div>
-
-        <div className="gsap-scaleherostuff opacity-0 flex flex-col items-center absolute xl:top-[30%] top-[10%] right-[10%] sm:scale-100 scale-75">
-          <img src="/landing/online-girl-1.avif" className='w-[70px]' alt="" />
-        </div>
 
         <div className="gsap-scaleherostuff opacity-0 absolute z-0 xl:bottom-[150px] bottom-[50px] xl:right-[15%] right-[10%] sm:scale-100 scale-75">
           <img src="/landing/typingonline.webp" className='md:w-[120px] w-[80px]' alt="" />
@@ -94,26 +83,6 @@ export const Hero = () => {
           </div>
         </div>
 
-        <div className="gsap-scaleherostuff opacity-0 absolute sm:bottom-[150px] bottom-[10%] md:left-[25%] left-[5%]">
-          <div className="capitalize bg-black/20 px-4 py-2 backdrop-blur-lg rounded-lg md:translate-y-[-10px] text-sm">
-            Fricaa me
-          </div>
-          <div className="flex items-center gap-2 text-sm">
-            <p>Joshua</p>
-            <img src="/landing/online/1.webp" className='w-[50px]' alt="" />
-          </div>
-        </div>
-
-
-        <div className="gsap-scaleherostuff opacity-0 absolute xl:top-[30% md:top-[15%] sm:top-[10%] top-14  xl:right-[20%] right-[40%] flex items-end flex-col">
-          <div className="capitalize bg-black/20 px-4 py-2 backdrop-blur-lg rounded-lg md:translate-y-[-5px] text-sm">
-            Let&apos;s chaaaat ! 💬
-          </div>
-          <div className="flex items-center gap-2 text-sm">
-            <p>Leslie</p>
-            <img src="/landing/online/2.webp" className='w-[50px]' alt="" />
-          </div>
-        </div>
       </div>
     </div>
   )

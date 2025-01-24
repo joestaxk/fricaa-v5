@@ -1,22 +1,31 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Fira_Sans, Anton } from 'next/font/google';
+import localFont from 'next/font/local'
 
-const firaSans = Fira_Sans({
-  subsets: ['latin'],
-  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
-  variable: '--font-fira-sans',
-});
 
-const anton = Anton({
-  subsets: ['latin'],
-  weight: ['400'],
-  variable: '--font-anton',
-});
+
+export const anton = localFont({
+  src: '../../../public/font/Antonio-VariableFont_wght.ttf',
+})
+ 
+const fira = localFont({
+  src: [
+    {
+      path: '../../../public/font/fira/FiraSans-Regular.ttf',
+      weight: '400',
+      style: 'normal',
+    },
+    {
+      path: '../../../public/font/fira/FiraSans-Medium.ttf',
+      weight: '400',
+      style: 'normal',
+    }
+  ],
+})
 
 const FanRewards = () => {
   return (
-    <div className={`${firaSans.variable} ${anton.variable} relative`}>
+    <div className="relative">
       <div className="w-[500px] h-[500px] bg-pink/60 rounded-full top-[50%] right-[-250px] absolute blur-[15rem] z-0"></div>
 
       <div className="flex justify-center">
@@ -39,7 +48,7 @@ const FanRewards = () => {
                   <motion.h1
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
-                    className="anton xl:text-[7rem] md:text-[5.5rem] sm:text-[4.5rem] xs:text-[3.5rem] text-[2.5rem] flex gap-2 text-white"
+                    className={`${anton.className} font-bold xl:text-[7rem] md:text-[5.5rem] sm:text-[4.5rem] xs:text-[3.5rem] text-[2.5rem] flex gap-2 text-white`}
                   >
                     FAN <span className="text-pink ml-2">REWARDS</span>
                   </motion.h1>
@@ -49,7 +58,7 @@ const FanRewards = () => {
                   <motion.h2
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
-                    className="lg:text-[2rem] sm:text-[1.6rem] text-[1.1rem] fira"
+                    className={`lg:text-[2rem] sm:text-[1.6rem] text-[1.1rem] ${fira.className}`}
                   >
                     SCORES, CREATOR GIFTS & TIPS
                   </motion.h2>
@@ -57,7 +66,7 @@ const FanRewards = () => {
                   <motion.p
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
-                    className="fira mt-10 lg:text-[1.4rem] sm:text-[1.3rem] text-[1rem] xl:w-[500px] md:w-[400px] sm:w-[400px] w-full text-[#8b928b]"
+                    className={`${fira} mt-10 lg:text-[1.4rem] sm:text-[1.3rem] text-[1rem] xl:w-[500px] md:w-[400px] sm:w-[400px] w-full text-[#8b928b]`}
                   >
                     Join the epic quest to unlock rewards, cash and legendary heroes. Player or watcher?
                     Either can win!
@@ -66,7 +75,7 @@ const FanRewards = () => {
                   <motion.div
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
-                    className="fira flex relative lg:translate-y-10 lg:-translate-x-5"
+                    className={`${fira} flex relative lg:translate-y-10 lg:-translate-x-5`}
                   >
                     <div className="sm:w-[350px] w-[250px] h-[30px] relative flex justify-center transition-all hover:scale-105">
                       <div className="sm:w-[320px] w-[250px] h-[30px] overflow-hidden absolute border border-gray-50/20 top-[-.3rem] sm:right-[.8rem] right-[-.1rem] border-b-0">
