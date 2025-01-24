@@ -42,7 +42,7 @@ export const Section2 = () => {
                         CHAT_PROPS.map((v, i) => (
                             <FakeChats
                                 key={i}
-                                imgSrc={"chatlandingpage/" + (i + 1) + ".webp"}
+                                imgSrc={"/chatlandingpage/" + (i + 1) + ".webp"}
                                 user={v.name}
                                 message={v.message}
                                 i={i}

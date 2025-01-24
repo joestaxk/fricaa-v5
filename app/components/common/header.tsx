@@ -1,11 +1,26 @@
 "use client";
 import Image from 'next/image'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { MENUBAR_ITEM } from '@/app/utils/constants';
 
 export const Header = () => {
+    const [scrolling, setStrolling] = useState(true);
+
+    useEffect(() => {
+        const scroll = function() {
+            if(window.scrollY > 200) {
+                return setStrolling(false)
+            }
+            setStrolling(true)
+        }
+        window.addEventListener("scroll", scroll);
+
+        return () => {
+            window.removeEventListener("scroll", scroll);
+        }
+    }, [])
     return (
-        <div className="flex justify-center w-full z-[20]">
+        <div className={`flex justify-center w-full z-[20] sm:bg-black bg-transparent ${scrolling ? "fixed top-0" : ''}`}>
             <div className=' w-[1400px] max-w-full m-auto px-5 h-14 md:rounded-full text-white flex items-center justify-between'>
                 <Image src="/fricaa.svg" alt="fricaa logo" className='md:w-[100px] sm:w-[90px] w-[100px] h-auto object-cover' width={100} height={100} />
 
